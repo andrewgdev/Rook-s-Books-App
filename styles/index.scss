@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "variables";
+@import "reset";
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 16px;
+    font-family: Inter, Dancing Script, sans-serif;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+header {
+    height: 38px;
+    width: 100%;
+    background-color: $primaryBackgroundColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+
+    h1.header__h1 {
+        font-size: 18px;
+        font-family: Dancing Script, sans-serif;
+        font-weight: 900;
+        color: $primaryTextColor;
+    }
+
+    nav.container__nav {
+        
+        ul.header__ul {
+            display: flex;
+
+            li.header__li {
+                font-size: 8px;
+                margin: 0 5px;
+            color: $primaryTextColor;
+            }
+        }
+    }
+}
+
+// HAMBURGER MENU
+
+.menu-wrapper {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: absolute;
+
+    input.input__toggle-nav {
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        right: 5px;
+        top: 6px;
+        z-index: 2;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    .hamburger {
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        right: 5px;
+        top: 6px;
+        z-index: 1;
+        background-color: $secondaryBackgroundColor;
+        display: flex;
+        align-items: center;
+
+        .inner__div {
+            height: 2px;
+            width: 80%;
+            margin: auto;
+            background-color: white;
+        }
+        
+        .inner__div::before, .inner__div::after {
+            height: 2px;
+            width: 80%;
+            margin: auto;
+            background-color: white;
+            top: 5px;
+        }
+    }
+
+    .menu__nav_hamburger {
+        display: none;
+
+        nav {
+
+        
+            ul {
+              
+        
+                li.navigation__li {
+
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 510px) {
+    nav.container__nav {
+        display: none;
+    }
+
+    .menu-wrapper {
+        display: block;
+    }
+}

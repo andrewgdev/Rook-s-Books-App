@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap");
+input, figure, img {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+  font-family: Inter, Dancing Script, sans-serif;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+header {
+  height: 38px;
+  width: 100%;
+  background-color: #1B64A8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+}
+
+header h1.header__h1 {
+  font-size: 18px;
+  font-family: Dancing Script, sans-serif;
+  font-weight: 900;
+  color: #fff;
+}
+
+header nav.container__nav ul.header__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav.container__nav ul.header__ul li.header__li {
+  font-size: 8px;
+  margin: 0 5px;
+  color: #fff;
+}
+
+.menu-wrapper {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: absolute;
+}
+
+.menu-wrapper input.input__toggle-nav {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  right: 5px;
+  top: 6px;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.menu-wrapper .hamburger {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  right: 5px;
+  top: 6px;
+  z-index: 1;
+  background-color: #4877A4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-wrapper .hamburger .inner__div {
+  height: 2px;
+  width: 80%;
+  margin: auto;
+  background-color: white;
+}
+
+.menu-wrapper .hamburger .inner__div::before, .menu-wrapper .hamburger .inner__div::after {
+  height: 2px;
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  top: 5px;
+}
+
+.menu-wrapper .menu__nav_hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 510px) {
+  nav.container__nav {
+    display: none;
+  }
+  .menu-wrapper {
+    display: block;
+  }
+}
+/*# sourceMappingURL=index.css.map */
