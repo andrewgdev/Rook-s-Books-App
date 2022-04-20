@@ -20,6 +20,10 @@ html {
   letter-spacing: 2px;
 }
 
+body {
+  background-image: url("../images/RooksBackgroundPattern.jpg");
+}
+
 header {
   height: 38px;
   width: 100%;
@@ -62,7 +66,7 @@ header nav.container__nav ul.header__ul li.header__li {
   position: absolute;
 }
 
-.menu-wrapper input.input__toggle-nav {
+.menu-wrapper .input__toggle-nav {
   height: 25px;
   width: 25px;
   position: absolute;
@@ -89,23 +93,39 @@ header nav.container__nav ul.header__ul li.header__li {
           align-items: center;
 }
 
-.menu-wrapper .hamburger .inner__div {
+.menu-wrapper .hamburger .inner__div, .menu-wrapper .hamburger .inner__div::before,
+.menu-wrapper .hamburger .inner__div::after {
   height: 2px;
   width: 80%;
   margin: auto;
   background-color: white;
 }
 
-.menu-wrapper .hamburger .inner__div::before, .menu-wrapper .hamburger .inner__div::after {
-  height: 2px;
-  width: 80%;
-  margin: auto;
+.menu-wrapper .hamburger .inner__div::before,
+.menu-wrapper .hamburger .inner__div::after {
+  content: "";
   background-color: white;
+  position: absolute;
   top: 5px;
+}
+
+
+.menu-wrapper .hamburger .inner__div::after {
+  top: 17px;
+}
+
+.menu-wrapper .hamburger .input__toggle-nav:checked + div > .inner__div::before,
+.menu-wrapper .hamburger .input__toggle-nav:checked + div > .inner__div::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .menu-wrapper .menu__nav_hamburger {
   display: none;
+}
+
+.menu-wrapper .menu__nav_hamburger nav ul li.navigation__li {
+  color: #fff;
 }
 
 @media screen and (max-width: 510px) {
