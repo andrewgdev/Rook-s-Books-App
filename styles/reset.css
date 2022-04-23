@@ -1,3 +1,23 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+  font-family: Inter, Dancing Script, sans-serif;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+body {
+  background-image: url("../images/RooksBackgroundPattern.jpg");
+}
+
 input, figure, img {
   margin: 0;
   padding: 0;
