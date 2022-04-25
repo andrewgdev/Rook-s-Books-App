@@ -22,6 +22,7 @@ body {
 input, figure, img {
   margin: 0;
   padding: 0;
+  height: 0px;
 }
 
 header {
@@ -56,6 +57,7 @@ header nav.container__nav ul.header__ul {
 header nav.container__nav ul.header__ul li.header__li {
   font-size: 1rem;
   margin: 0 5px;
+  font-weight: 700;
 }
 
 header nav.container__nav ul.header__ul li.header__li a {
@@ -152,8 +154,8 @@ header nav.container__nav ul.header__ul li.header__li a {
       -ms-flex-align: center;
           align-items: center;
   max-width: 60%;
-  margin: 50px auto;
-  background-color: #0054ae;
+  margin: 39.5px auto;
+  background-color: #004084;
   border-radius: 10px;
 }
 
@@ -165,7 +167,7 @@ header nav.container__nav ul.header__ul li.header__li a {
 
 .menu-wrapper .menu__nav_hamburger nav ul li.navigation__li {
   margin: auto 15px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -197,15 +199,6 @@ header nav.container__nav ul.header__ul li.header__li a {
           transform: rotate(90deg);
 }
 
-@media screen and (max-width: 500px) {
-  nav.container__nav {
-    display: none;
-  }
-  .menu-wrapper {
-    display: block;
-  }
-}
-
 @media screen and (max-width: 400px) {
   .menu-wrapper {
     display: block;
@@ -216,6 +209,49 @@ header nav.container__nav ul.header__ul li.header__li a {
   .menu-wrapper .menu__nav_hamburger nav ul li.navigation__li {
     margin: auto 5px;
     font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav.container__nav {
+    display: none;
+  }
+  .menu-wrapper {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    height: 60px;
+  }
+  header h1.header__h1 {
+    font-size: 1.75rem;
+  }
+  header nav.container__nav ul.header__ul li.header__li {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    height: 90px;
+  }
+  header h1.header__h1 {
+    font-size: 2.5rem;
+  }
+  header nav.container__nav ul.header__ul li.header__li {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    height: 120px;
+  }
+  header nav.container__nav ul.header__ul li.header__li {
+    font-size: 2.5rem;
+    margin: 0 15px;
   }
 }
 /*# sourceMappingURL=headerHamburgerMenu.css.map */

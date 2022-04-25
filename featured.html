@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:site_name" content="Rook's">
     <meta property="og:description" content="Welcome to Rook's book discovery">
-    <meta property="og:title" content="Rook's">
-    <meta name="description" content="Welcome to Rook's book discovery">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles/index.css">
-    <title>Rook's</title>
+    <meta property="og:title" content="Rook's Featured Books">
+    <meta name="description" content="Featured books">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/featured.css">
+    <title>Featured</title>
 </head>
 <body>
     <!-- HAMBURGER MENU -->
@@ -26,7 +26,7 @@
             </nav>
         </div>
     </div>
-    
+
     <header>
         <h1 class="header__h1">Rook's</h1>
         <nav class="container__nav">
@@ -35,28 +35,20 @@
                 <li class="header__li"><a href="featured.html">Featured</a></li>
             </ul>
         </nav>
-    </header>
-    
+    </header>   
+
     <main>
-        <h2 class="main__h2">Welcome</h2>
-        <div class="main__display-flex">    
-            <figure class="card__figure figure1">
-                <img class="card__img" src="./images/aboutUs1.jpg" alt="" width="150px" height="200px">
-            </figure>
-            <figure class="card__figure figure2">
-                <img class="card__img" src="./images/BookShelfLight.jpg" alt="" width="150px" height="200px">
-            </figure>
-        </div>
-        <div class="card__div_web-description">
-            <p class="card__p_text">For the enjoyment of reading, 
-                we get lost in fantasy and 
-                supplement our studious 
-                endeavours.
-            </p>
-        </div>
-        <figure class="card__figure">
-            <img class="card__img" src="./images/GroupReadingHome.jpg" alt="">
-        </figure>
+        <h2 class="main__h2">Featured</h2>
+        <section class="grid main__section_grid-display">
+           
+            <figure class="card__figure" id="figure1"><img class="card__img_book" src="./images/aboutUs1.jpg" alt=""></figure>
+
+            <figure class="card__figure" id="figure2"><img class="card__img_book" src="./images/aboutUs1.jpg" alt=""></figure>
+
+            <figure class="card__figure" id="figure3"><img class="card__img_book" src="./images/aboutUs1.jpg" alt=""></figure>
+
+        </section>
     </main>
 </body>
+<script src="featured.js"></script>
 </html>

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "variables";
+@import "reset";
+@import "HeaderHamburgerMenu/headerHamburgerMenu";
+
+main {
+    height: auto;
+    width: 100%;
+
+    .main__h2 {
+        width: 100%;
+        height: 28px;
+        margin: 40px auto;
+        padding: 5px;
+        background-color: $primaryBackgroundColor;
+        color: $primaryTextColor;
+        font-size: 0.8rem;
+        text-align: center;
+
+    }
+    
+    .main__section_grid-display {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        
+        .card__figure {
+            height: 150px;
+            width: 60%;
+            margin: 25px auto;
+            text-align: center;
+
+            .card__img_book {
+                height: 100%;
+                width: 60%;
+                margin: auto;
+                border-radius: 5px;
+                box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+}
+
+// MEDIA QUERIES
+@media screen and (min-width: 330px) {
+    main {
+
+        .main__section_grid-display {
+    
+            .card__figure {
+                height: 200px;
+                
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 500px) {
+    main {
+
+        .main__section_grid-display {
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+    
+            .card__figure {
+                height: 200px;
+                width: 80%;
+                
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    main {
+
+        .main__section_grid-display {
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+    
+            .card__figure {
+                height: 300px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+
+        .main__section_grid-display {
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto;
+    
+            .card__figure {
+                height: 300px;
+                width: 100%;
+                
+            }
+        }
+    }
+}
