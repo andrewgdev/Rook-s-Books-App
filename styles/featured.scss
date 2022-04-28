@@ -76,6 +76,12 @@ main {
 @media screen and (min-width: 700px) {
     main {
 
+        .main__h2 {
+            height: 48px;
+            padding: 7px;
+            font-size: 1.5rem;
+        }
+
         .main__section_grid-display {
             grid-template-columns: auto auto;
             grid-template-rows: auto auto;
@@ -90,6 +96,58 @@ main {
 
 @media screen and (min-width: 1024px) {
     main {
+
+        .main__h2 {
+            height: 48px;
+            padding: 5px;
+            font-size: 0.8rem;
+        }
+
+        .main__section_grid-display {
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto;
+    
+            .card__figure {
+                height: 300px;
+                width: 100%;
+                
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    main {
+
+        .main__h2 {
+            height: 70px;
+            padding: 12px;
+            font-size: 2rem;
+            margin: 100px auto;
+        }
+
+        .main__section_grid-display {
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto;
+    
+            .card__figure {
+                height: 300px;
+                width: 100%;
+                
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    main {
+
+        .main__h2 {
+            height: 80px;
+            padding: 15px;
+            font-size: 2rem;
+            margin: 100px auto;
+        }
 
         .main__section_grid-display {
             grid-template-columns: auto auto auto;

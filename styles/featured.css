@@ -248,7 +248,7 @@ header nav.container__nav ul.header__ul li.header__li a {
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 700px) {
   header {
     height: 60px;
   }
@@ -260,25 +260,28 @@ header nav.container__nav ul.header__ul li.header__li a {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   header {
-    height: 90px;
+    height: 60px;
   }
   header h1.header__h1 {
     font-size: 2.5rem;
   }
   header nav.container__nav ul.header__ul li.header__li {
-    font-size: 1.75rem;
+    font-size: 2rem;
+    margin: auto 15px;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 2000px) {
   header {
-    height: 120px;
+    height: 100px;
+  }
+  header h1.header__h1 {
+    font-size: 3rem;
   }
   header nav.container__nav ul.header__ul li.header__li {
-    font-size: 2.5rem;
-    margin: 0 15px;
+    font-size: 2.25rem;
   }
 }
 
@@ -345,6 +348,11 @@ main .main__section_grid-display .card__figure .card__img_book {
 }
 
 @media screen and (min-width: 700px) {
+  main .main__h2 {
+    height: 48px;
+    padding: 7px;
+    font-size: 1.5rem;
+  }
   main .main__section_grid-display {
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
@@ -358,6 +366,49 @@ main .main__section_grid-display .card__figure .card__img_book {
 }
 
 @media screen and (min-width: 1024px) {
+  main .main__h2 {
+    height: 48px;
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+  main .main__section_grid-display {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  main .main__section_grid-display .card__figure {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main .main__h2 {
+    height: 70px;
+    padding: 12px;
+    font-size: 2rem;
+    margin: 100px auto;
+  }
+  main .main__section_grid-display {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  main .main__section_grid-display .card__figure {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  main .main__h2 {
+    height: 80px;
+    padding: 15px;
+    font-size: 2rem;
+    margin: 100px auto;
+  }
   main .main__section_grid-display {
     -ms-grid-columns: auto auto auto;
         grid-template-columns: auto auto auto;
